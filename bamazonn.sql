@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS bamazon;
+DROP DATABASE IF EXISTS bamazonn;
 
-CREATE database bamazon;
+CREATE database bamazonn;
 
-USE bamazon;
+USE bamazonn;
 
 CREATE TABLE products(
 	item_id INT(4) NOT NULL,
@@ -16,13 +16,13 @@ CREATE TABLE products(
 Select * FROM products;
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity) 
-VALUES (101, "boots", "soccer", 79.99, 20),
-	   (212, "jerseys", "basketball", 99.99, 10),
+VALUES (101, "cleats", "soccer", 79.99, 20),
+	   (212, "sneakers", "basketball", 99.99, 10),
 	   (313, "helmet", "football", 29.99, 5),
-	   (420, "sweater", "hockey", 129.99, 14),
+	   (420, "pads", "football", 129.99, 14),
 	   (504, "pants", "football", 39.99, 15),
 	   (619, "shorts", "soccer", 19.99, 19),
 	   (720, "gloves", "baseball", 49.99, 11),
 	   (808, "bats", "baseball", 69.99, 10),
 	   (913, "pucks", "hockey", 9.99, 19),
-	   (1009, "shoes", "basketball", 89.99, 17)
+	   (1009, "skates", "hockey", 89.99, 17)

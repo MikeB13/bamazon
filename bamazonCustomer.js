@@ -35,20 +35,19 @@ var displayProducts = function() {
 
 
 function purchasePrompt() {
-    inquirer.prompt([{
+    inquirer.prompt({
             name: "ID",
             type: "input",
             message: "Please enter Item ID you like to purhcase.",
             filter: Number
-        },
-        {
+        } {
             name: "Quantity",
             type: "input",
             message: "How many items do you wish to purchase?",
             filter: Number
         },
 
-    ]).then(function(answers) {
+    ).then(function(answers) {
         var quantityNeeded = answers.Quantity;
         var IDrequested = answers.ID;
         purchaseOrder(IDrequested, quantityNeeded);
